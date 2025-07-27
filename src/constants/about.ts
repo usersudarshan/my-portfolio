@@ -1,0 +1,5 @@
+// src/constants/about.ts
+
+export const aboutMe = `
+Full Stack Developer with 4.3 years of experience, specializing in backend development using Node.js, Express, and PostgreSQL to build scalable and maintainable APIs. Proficient in developing RESTful services and integrating databases with TypeScript for robust server-side logic. Skilled in frontend technologies, including React with Redux for state management and Puppeteer for automation. Experienced in writing unit tests with Jest and Enzyme to ensure code quality. Comfortable working in cloud environments like Azure and AWS, and with tools such as Redis, Kafka, Snowflake, and Metabase. Also familiar with Java and Python.
+`;

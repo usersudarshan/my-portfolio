@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
+import Tabs from "./components/Tabs";
 
-function App() {
+const App: React.FC = () => {
+  const [currentTab, setCurrentTab] = useState<
+    "about" | "experience" | "education" | "contact"
+  >("about");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex min-h-screen bg-black/70">
+      <Sidebar />
+      <main className="flex-1 bg-black px-12 py-10 overflow-y-auto">
+        <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        {currentTab === "about" && <About />}
+        {currentTab === "experience" && <Experience />}
+        {currentTab === "education" && <Education />}
+        {currentTab === "contact" && <Contact />}
+      </main>
     </div>
   );
-}
+};
 
 export default App;

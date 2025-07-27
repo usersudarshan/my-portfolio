@@ -1,0 +1,30 @@
+export const hardSkills = [
+  "Node.js",
+  "Express",
+  "ReactJs",
+  "TypeScript",
+  "PostgreSQL",
+  "Redux",
+  "Puppeteer",
+  "Jest",
+  "Enzyme",
+  "Pytest",
+  "Azure",
+  "AWS",
+  "Kubernetes",
+  "Kafka",
+  "Rancher",
+  "Snowflake",
+  "Metabase",
+  "Redis",
+  "Java",
+  "Python",
+  "Terraform",
+];
+
+export const softSkills = [
+  "Leadership",
+  "Teamwork",
+  "Problem Solving",
+  "Communication",
+];
