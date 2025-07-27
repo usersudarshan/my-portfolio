@@ -1,3 +1,4 @@
+// src/constants/sidebar.ts
 export const sidebar = {
   avatarUrl: "/profile.jpeg",
   avatarEmoji: "👨🏻‍💻",
@@ -5,17 +6,19 @@ export const sidebar = {
   title: "Software Development Engineer",
   tagline: "Full Stack Developer | Node.js | React | TypeScript | PostgreSQL",
   labels: [
-    { label: "Email", value: "user.sudarshan@gmail.com" },
-    { label: "Location", value: "Sangli, Maharashtra" },
+    { label: "Email", value: "user.sudarshan@gmail.com", icon: "Email" },
+    { label: "Location", value: "Sangli, Maharashtra", icon: "LocationOn" },
     {
       label: "LinkedIn",
       value: "sudarshan-patil-022352166",
       url: "https://linkedin.com/in/sudarshan-patil-022352166",
+      icon: "LinkedIn",
     },
     {
       label: "GitHub",
       value: "usersudarshan",
       url: "https://github.com/usersudarshan",
+      icon: "GitHub",
     },
   ],
 };

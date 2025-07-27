@@ -1,38 +1,43 @@
-import React from "react";
+import React, { JSX } from "react";
 import { contact } from "../constants/contact";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+// Map icon string to MUI icon components
+const iconMap: Record<string, JSX.Element> = {
+  Email: <EmailIcon className="inline text-orange-400 mr-2" fontSize="small" />,
+  LocationOn: (
+    <LocationOnIcon className="inline text-green-400 mr-2" fontSize="small" />
+  ),
+  LinkedIn: (
+    <LinkedInIcon className="inline text-blue-500 mr-2" fontSize="small" />
+  ),
+  GitHub: <GitHubIcon className="inline text-gray-400 mr-2" fontSize="small" />,
+};
 
 const Contact: React.FC = () => (
-  <section className="mb-8">
+  <section id="contact" className="mb-8">
     <h2 className="text-xl text-orange-400 mb-4 font-bold">Contact</h2>
     <ul className="text-gray-200">
-      <li>
-        <span className="font-bold">Email:</span> {contact.email}
-      </li>
-      <li>
-        <span className="font-bold">Location:</span> {contact.location}
-      </li>
-      <li>
-        <span className="font-bold">LinkedIn:</span>
-        <a
-          href={contact.linkedin}
-          className="text-orange-400 underline ml-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {contact.linkedin}
-        </a>
-      </li>
-      <li>
-        <span className="font-bold">Git:</span>
-        <a
-          href={contact.git}
-          className="text-orange-400 underline ml-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {contact.git}
-        </a>
-      </li>
+      {contact.map((item, idx) => (
+        <li className="mb-2 flex items-center" key={idx}>
+          {item.icon && iconMap[item.icon]}
+          {item.url ? (
+            <a
+              href={item.url}
+              className="text-orange-400 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.value}
+            </a>
+          ) : (
+            <span>{item.value}</span>
+          )}
+        </li>
+      ))}
     </ul>
   </section>
 );

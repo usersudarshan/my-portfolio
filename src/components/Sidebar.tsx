@@ -1,9 +1,25 @@
-import React from "react";
+import React, { JSX } from "react";
 import { sidebar } from "../constants/sidebar";
+import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+// Map the icon string to the Material UI icon component
+const iconMap: Record<string, JSX.Element> = {
+  Email: <EmailIcon className="inline text-orange-400 mr-1" fontSize="small" />,
+  LocationOn: (
+    <LocationOnIcon className="inline text-green-400 mr-1" fontSize="small" />
+  ),
+  LinkedIn: (
+    <LinkedInIcon className="inline text-blue-500 mr-1" fontSize="small" />
+  ),
+  GitHub: <GitHubIcon className="inline text-gray-400 mr-1" fontSize="small" />,
+};
 
 const Sidebar: React.FC = () => (
-  <aside className="flex flex-col items-center bg-gray-950 w-80 min-h-screen py-10 text-gray-100">
-    <div className="w-28 h-28 rounded-full bg-gray-950 flex items-center justify-center mb-6 overflow-hidden">
+  <aside className="flex flex-col items-center bg-black/80 w-80 min-h-screen py-10 text-gray-100">
+    <div className="w-28 h-28 rounded-full bg-gray-600 flex items-center justify-center mb-6 overflow-hidden">
       {sidebar.avatarUrl ? (
         <img
           src={sidebar.avatarUrl}
@@ -20,7 +36,7 @@ const Sidebar: React.FC = () => (
     <ul className="text-sm space-y-2 w-full px-6">
       {sidebar.labels.map((item, idx) => (
         <li key={idx}>
-          <span className="font-bold text-gray-300">{item.label}:</span>{" "}
+          {item.icon && iconMap[item.icon]}
           {item.url ? (
             <a
               href={item.url}
@@ -31,7 +47,7 @@ const Sidebar: React.FC = () => (
               {item.value}
             </a>
           ) : (
-            item.value
+            <span className="ml-1">{item.value}</span>
           )}
         </li>
       ))}
