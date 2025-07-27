@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Map icon string to MUI icon components
 const iconMap: Record<string, JSX.Element> = {
-  Email: <EmailIcon className="inline text-orange-400 mr-2" fontSize="small" />,
+  Email: <EmailIcon className="inline text-[#B89B2B] mr-2" fontSize="small" />,
   LocationOn: (
     <LocationOnIcon className="inline text-green-400 mr-2" fontSize="small" />
   ),
@@ -19,7 +19,7 @@ const iconMap: Record<string, JSX.Element> = {
 
 const Contact: React.FC = () => (
   <section id="contact" className="mb-8">
-    <h2 className="text-xl text-orange-400 mb-4 font-bold">Contact</h2>
+    <h2 className="text-xl text-[#B89B2B] mb-4 font-bold">Contact</h2>
     <ul className="text-gray-200">
       {contact.map((item, idx) => (
         <li className="mb-2 flex items-center" key={idx}>
@@ -27,7 +27,7 @@ const Contact: React.FC = () => (
           {item.url ? (
             <a
               href={item.url}
-              className="text-orange-400 underline"
+              className="text-[#B89B2B] underline"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -14,7 +14,7 @@ export const contact = [
   },
   {
     value: "usersudarshan",
-    url: "https://github.com/usersudarshan",
+    url: "https://github.com/usersudarshan?tab=repositories",
     icon: "GitHub",
   },
 ];

@@ -12,9 +12,9 @@ const App: React.FC = () => {
   >("about");
 
   return (
-    <div className="flex min-h-screen bg-black/70">
+    <div className="flex min-h-screen  bg-[#000008]">
       <Sidebar />
-      <main className="flex-1 bg-black px-12 py-10 overflow-y-auto">
+      <main className="flex-1 bg-[#000008] px-12 py-10 overflow-y-auto">
         <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
         {currentTab === "about" && <About />}
         {currentTab === "experience" && <Experience />}

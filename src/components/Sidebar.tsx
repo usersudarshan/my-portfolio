@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Map the icon string to the Material UI icon component
 const iconMap: Record<string, JSX.Element> = {
-  Email: <EmailIcon className="inline text-orange-400 mr-1" fontSize="small" />,
+  Email: <EmailIcon className="inline text-[#B89B2B] mr-1" fontSize="small" />,
   LocationOn: (
     <LocationOnIcon className="inline text-green-400 mr-1" fontSize="small" />
   ),
@@ -18,7 +18,7 @@ const iconMap: Record<string, JSX.Element> = {
 };
 
 const Sidebar: React.FC = () => (
-  <aside className="flex flex-col items-center bg-black/80 w-80 min-h-screen py-10 text-gray-100">
+  <aside className="flex flex-col items-center bg-[#000002] w-80 min-h-screen py-10 text-gray-100">
     <div className="w-28 h-28 rounded-full bg-gray-600 flex items-center justify-center mb-6 overflow-hidden">
       {sidebar.avatarUrl ? (
         <img
@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => (
       )}
     </div>
     <h1 className="text-2xl font-bold mb-1 text-center">{sidebar.name}</h1>
-    <p className="text-orange-300 mb-2 text-center">{sidebar.title}</p>
+    <p className="text-[#B89B2B] mb-2 text-center">{sidebar.title}</p>
     <p className="text-sm text-gray-400 text-center mb-6">{sidebar.tagline}</p>
     <ul className="text-sm space-y-2 w-full px-6">
       {sidebar.labels.map((item, idx) => (
@@ -40,7 +40,7 @@ const Sidebar: React.FC = () => (
           {item.url ? (
             <a
               href={item.url}
-              className="text-orange-400 underline ml-1"
+              className="text-[#B89B2B] underline ml-1"
               target="_blank"
               rel="noopener noreferrer"
             >

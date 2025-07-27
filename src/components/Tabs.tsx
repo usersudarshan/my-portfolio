@@ -22,8 +22,8 @@ const Tabs: React.FC<TabsProps> = ({ currentTab, setCurrentTab }) => (
         onClick={() => setCurrentTab(tab.key)}
         className={`px-4 py-2 rounded ${
           currentTab === tab.key
-            ? "bg-orange-400 text-white"
-            : "bg-gray-700 text-gray-200 hover:bg-orange-500"
+            ? "bg-[#B89B2B] text-white"
+            : "bg-gray-700 text-gray-200 hover:bg-[#B89B2B]"
         } transition`}
       >
         {tab.label}

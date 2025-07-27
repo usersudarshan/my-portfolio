@@ -17,7 +17,7 @@ export const sidebar = {
     {
       label: "GitHub",
       value: "usersudarshan",
-      url: "https://github.com/usersudarshan",
+      url: "https://github.com/usersudarshan?tab=repositories",
       icon: "GitHub",
     },
   ],
