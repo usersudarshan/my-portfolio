@@ -2,8 +2,8 @@ import React from "react";
 import { sidebar } from "../constants/sidebar";
 
 const Sidebar: React.FC = () => (
-  <aside className="flex flex-col items-center bg-gray-800 w-80 min-h-screen py-10 text-gray-100">
-    <div className="w-28 h-28 rounded-full bg-gray-600 flex items-center justify-center mb-6 overflow-hidden">
+  <aside className="flex flex-col items-center bg-gray-950 w-80 min-h-screen py-10 text-gray-100">
+    <div className="w-28 h-28 rounded-full bg-gray-950 flex items-center justify-center mb-6 overflow-hidden">
       {sidebar.avatarUrl ? (
         <img
           src={sidebar.avatarUrl}

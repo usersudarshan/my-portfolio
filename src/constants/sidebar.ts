@@ -1,5 +1,4 @@
 // src/constants/sidebar.ts
-
 export const sidebar = {
   avatarUrl: "/profile.jpeg",
   avatarEmoji: "👨🏻‍💻",
@@ -13,6 +12,11 @@ export const sidebar = {
       label: "LinkedIn",
       value: "sudarshan-patil-022352166",
       url: "https://linkedin.com/in/sudarshan-patil-022352166",
+    },
+    {
+      label: "GitHub",
+      value: "usersudarshan",
+      url: "https://github.com/usersudarshan",
     },
   ],
 };

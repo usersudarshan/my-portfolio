@@ -22,6 +22,17 @@ const Contact: React.FC = () => (
           {contact.linkedin}
         </a>
       </li>
+      <li>
+        <span className="font-bold">Git:</span>
+        <a
+          href={contact.git}
+          className="text-orange-400 underline ml-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {contact.git}
+        </a>
+      </li>
     </ul>
   </section>
 );
