@@ -12,7 +12,7 @@ const About: React.FC = () => (
         {hardSkills.map((skill) => (
           <span
             key={skill}
-            className="bg-gray-700 text-[#B89B2B] px-2 py-1 rounded text-xs border border-[#B89B2B]"
+            className="bg-[#000002] text-[#B89B2B] px-2 py-1 rounded text-xs border border-[#B89B2B]"
           >
             {skill}
           </span>
@@ -23,7 +23,7 @@ const About: React.FC = () => (
         {softSkills.map((skill) => (
           <span
             key={skill}
-            className="bg-gray-700 text-[#B89B2B] px-2 py-1 rounded text-xs border border-[#B89B2B]"
+            className="bg-[#000002] text-[#B89B2B] px-2 py-1 rounded text-xs border border-[#B89B2B]"
           >
             {skill}
           </span>
