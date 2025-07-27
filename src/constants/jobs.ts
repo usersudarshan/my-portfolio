@@ -10,5 +10,5 @@ export const jobs = [
       "Designed DBT models, Snowflake pipelines, and SQL queries for analytics.",
     ],
   },
-  // ...other jobs from your resume
+  // ...other jobs from resume
 ];

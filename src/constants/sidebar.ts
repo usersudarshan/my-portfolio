@@ -1,4 +1,3 @@
-// src/constants/sidebar.ts
 export const sidebar = {
   avatarUrl: "/profile.jpeg",
   avatarEmoji: "👨🏻‍💻",

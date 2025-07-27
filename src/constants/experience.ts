@@ -1,5 +1,3 @@
-// src/constants/experience.ts
-
 export interface ExperienceItem {
   company: string;
   title?: string;
