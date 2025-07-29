@@ -18,7 +18,7 @@ const iconMap: Record<string, JSX.Element> = {
 };
 
 const Sidebar: React.FC = () => (
-  <aside className="flex flex-col items-center bg-[#000002] w-80 min-h-screen py-10 text-gray-100">
+  <aside className="flex flex-col items-center bg-[#00005] w-80 min-h-screen py-10 text-gray-100">
     <div className="w-28 h-28 rounded-full bg-gray-600 flex items-center justify-center mb-6 overflow-hidden">
       {sidebar.avatarUrl ? (
         <img
